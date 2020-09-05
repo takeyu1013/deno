@@ -1,4 +1,4 @@
-FROM hayd/alpine-deno:1.2.3
+FROM hayd/alpine-deno
 WORKDIR /app
 COPY . .
-CMD ["run", "--allow-net" , "src/main.ts"]
+CMD [ "run", "--allow-net", "src/main.ts" ]
