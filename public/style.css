@@ -1,4 +1,10 @@
+body {
+    background-color: #f6f6f4;
+}
+
 p {
-    margin: 0;
-    padding: 0;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 50%;
+    background-color: white;
 }

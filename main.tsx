@@ -1,7 +1,6 @@
-// import { serve } from 'https://deno.land/std@0.68.0/http/server.ts';
+import { createApp, serveStatic } from 'https://servestjs.org/@/mod.ts';
 import React from 'https://dev.jspm.io/react'
 import ReactDOMServer from 'https://dev.jspm.io/react-dom/server';
-import { createApp, serveStatic } from 'https://servestjs.org/@/mod.ts';
 
 const app = createApp();
 app.use(serveStatic('./public'));
@@ -22,6 +21,7 @@ app.handle('/', async (request) => {
           <main>
             <p>カップラーメン</p>
             <p>洗濯</p>
+            <p>昼寝</p>
           </main>
         </body>
       </html>
