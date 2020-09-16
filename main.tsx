@@ -19,9 +19,14 @@ app.handle('/', async (request) => {
         </head>
         <body>
           <main>
-            <p>カップラーメン</p>
-            <p>洗濯</p>
-            <p>昼寝</p>
+            <div className="wrapper">
+              <button>+</button>
+            </div>
+            <div className="post-wrapper">
+              <p>カップラーメン</p>
+              <p>洗濯</p>
+              <p>昼寝</p>
+            </div>
           </main>
         </body>
       </html>

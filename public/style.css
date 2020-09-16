@@ -2,9 +2,22 @@ body {
     background-color: #f6f6f4;
 }
 
+.wrapper {
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+    text-align: right;
+}
+
+main button {
+    margin: 0;
+    padding: 0;
+}
+
 p {
     margin: 1rem auto;
     padding: 1rem;
     width: 50%;
     background-color: white;
+    box-sizing: border-box;
 }
