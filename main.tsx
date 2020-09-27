@@ -1,6 +1,7 @@
 import { createApp, serveStatic } from 'https://servestjs.org/@/mod.ts';
 import React from 'https://dev.jspm.io/react'
 import ReactDOMServer from 'https://dev.jspm.io/react-dom/server';
+import { Post } from './Post.tsx';
 
 const app = createApp();
 app.use(serveStatic('./public'));
@@ -23,9 +24,7 @@ app.handle('/', async (request) => {
               <button>+</button>
             </div>
             <div className="post-wrapper">
-              <p>カップラーメン</p>
-              <p>洗濯</p>
-              <p>昼寝</p>
+              <Post />
             </div>
           </main>
         </body>
