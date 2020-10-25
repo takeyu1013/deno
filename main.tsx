@@ -3,7 +3,8 @@ import { createApp, serveStatic } from 'https://servestjs.org/@/mod.ts';
 import React from 'https://dev.jspm.io/react/index.js';
 // @deno-types="https://servestjs.org/@/types/react-dom/server/index.d.ts"
 import ReactDOMServer from 'https://dev.jspm.io/react-dom/server.js';
-import { Post, addPost } from './Post.tsx';
+// import { Post, addPost } from './Post.tsx';
+import { List } from './List.tsx';
 
 const app = createApp();
 app.use(serveStatic('./public'));
@@ -22,12 +23,7 @@ app.handle('/', async (request) => {
         </head>
         <body>
           <main>
-            <div className="wrapper">
-              <button onClick={addPost}>+</button>
-            </div>
-            <div className="post-wrapper">
-              <Post />
-            </div>
+            <List />
           </main>
         </body>
       </html>
