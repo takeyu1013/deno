@@ -1,4 +1,7 @@
-FROM hayd/alpine-deno
+FROM denoland/deno
+EXPOSE 1993
 WORKDIR /app
-COPY . .
-CMD [ "run", "--allow-net", "--allow-read", "main.tsx" ]
+USER deno
+ADD . .
+RUN deno cache main.ts
+CMD [ "run", "--allow-net", "main.ts" ]
