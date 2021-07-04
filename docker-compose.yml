@@ -1,0 +1,6 @@
+version: "3.8"
+services: 
+  deno:
+    build: .
+    ports: 
+      - "1993:1993"
